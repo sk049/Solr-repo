@@ -29,8 +29,8 @@ public class DelelteFromSolr {
             while ((nextLine = reader.readNext()) != null)
             {
                 SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-                Date date1 =sdf.parse("02-02-2016");
-                //Date date1 = new Date();
+
+                Date date1 = new Date();
                 Date date2;
                 try {
                     date2 = sdf.parse(nextLine[12]);
